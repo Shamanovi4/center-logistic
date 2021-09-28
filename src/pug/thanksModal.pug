@@ -1,0 +1,21 @@
+.modal#thanksModal
+  .modal__inner
+    .modal__content
+      .modal__header
+        img.modal__icon(src="images/icons/tick.svg", alt="")
+        h4.modal__title Thanks for your request
+        .modal__text We call you back as soon as possible!
+      .modal-footer
+        h4.modal-footer__title Our contacts
+        address.modal-footer__contacts 
+          p New York, Street, ZIP code
+            br
+            | Phone: 
+            a.link--hover(href="tel:+9948373123") +9948373123 
+            br
+            | E-mail: 
+            a.link--hover(href="mailto:hello@centerlogistic.com") hello@centerlogistic.com
+      button.modal__close(type='button' data-modal-close)
+        span.modal__close-cross
+  // /.modal__inner
+// /.modal

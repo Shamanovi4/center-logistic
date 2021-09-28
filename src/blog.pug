@@ -1,0 +1,77 @@
+doctype html
+include pug/head.pug
+body
+  .page
+    // Header
+    header.header#header
+      .container
+        .header__inner
+          a(href='index.html')
+            img(src='images/icons/logo.svg' alt='CenterLogistic')
+          nav.nav#nav
+            a.nav__link.active(href='index.html') Home page
+            a.nav__link(href='text.html') Privacy Policy
+            a.nav__link(href='#') Terms & Conditions
+          button.burger#burger(type='button')
+            span.burger__line 1
+            span.burger__line 2
+            span.burger__line 3
+            span.burger__line 4
+    // Intro
+    .intro--blog#intro
+    section.section.section--last
+      .container
+        .main
+          .main__col.main__col--left
+            h2.section__title
+              span Interesting
+              |  to read
+            .articles.articles--column(data-aos='fade-right')
+              article.articles__item.articles__item--blog(data-aos='fade-in' data-aos-anchor='.articles.articles--column')
+                h4.articles__title
+                  a(href='#') News title
+                .articles__text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolor labore unde debitis consectetur repudiandae necessitatibus quae? Reprehenderit, veritatis laborum.
+                time.articles__date(datetime='2020-12-24 18:00') 24 December, 2020
+              article.articles__item.articles__item--blog(data-aos='fade-in' data-aos-delay='250' data-aos-anchor='.articles.articles--column')
+                h4.articles__title
+                  a(href='#') News title
+                .articles__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus officia praesentium consectetur optio ex minima velit sequi ducimus blanditiis dicta provident laboriosam a, non et tenetur excepturi ipsum. Corrupti, ipsa.
+                time.articles__date(datetime='2020-12-22 19:00') 22 December, 2020
+              article.articles__item.articles__item--blog(data-aos='fade-in' data-aos-delay='500' data-aos-anchor='.articles.articles--column')
+                h4.articles__title
+                  a(href='#') News title
+                .articles__text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur similique inventore voluptates excepturi, labore ipsam molestias tempore perspiciatis doloribus repudiandae cum, dicta accusamus? Odit reprehenderit vitae fuga autem laborum eveniet. Veritatis assumenda voluptas culpa? Molestiae fuga deserunt tempore. Eaque minima cum saepe soluta illo corrupti molestiae? Rem, libero? Totam, recusandae?
+                time.articles__date(datetime='2020-12-17 15:00') 17 December, 2020
+              article.articles__item.articles__item--blog(data-aos='fade-in' data-aos-delay='750' data-aos-anchor='.articles.articles--column')
+                h4.articles__title
+                  a(href='#') News title
+                .articles__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorum omnis, accusantium voluptatibus porro quas iusto placeat reiciendis commodi perferendis veritatis dolores dicta consequatur ipsa dignissimos atque numquam! Voluptatibus doloribus voluptates distinctio fugit quis consequatur nam quibusdam laboriosam accusamus quo, aliquid labore facere maxime deserunt.
+                time.articles__date(datetime='2020-12-15 16:00') 15 December, 2020
+            // /.articles
+            a.btn.btn--orange.btn--shadow(href='index.html' data-aos='fade-up' data-aos-delay='1000' data-aos-anchor='.articles.articles--column')
+              span Back to home
+          // /.container
+          .main__col.main__col--right
+            .request-form.request-form--right(data-aos='fade-left')
+              .request-form__header
+                h3.request-form__title Get Callback
+                .request-form__text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              .request-form__content
+                form.form(action='/' method='post')
+                  .form__group
+                    input.input.input--user(type='text' placeholder='Your name')
+                  .form__group
+                    input.input.input--phone(type='tel' placeholder='Your phone')
+                  .form__group
+                    input.input.input--mail(type='email' placeholder='Your email')
+                  button.btn.btn--block.btn--orange(type='submit' data-modal='#thanksModal')
+                    span Call me back
+              // /.request-form
+    // Footer
+    include pug/footer.pug
+    
+  // Modals
+  include pug/thanksModal.pug
+  
+  // Scripts
+  include pug/scripts.pug

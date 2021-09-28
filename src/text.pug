@@ -1,0 +1,59 @@
+doctype html
+include pug/head.pug
+body
+  .page
+    // Header
+    header.header#header
+      .container
+        .header__inner
+          a(href='index.html')
+            img(src='images/icons/logo.svg' alt='CenterLogistic')
+          nav.nav#nav
+            a.nav__link.active(href='index.html') Home page
+            a.nav__link(href='text.html') Privacy Policy
+            a.nav__link(href='#') Terms & Conditions
+          button.burger#burger(type='button')
+            span.burger__line 1
+            span.burger__line 2
+            span.burger__line 3
+            span.burger__line 4
+    // Intro
+    .intro--text#intro
+    section.section.section--last
+      .container
+        h2.section__title
+          span Privacy 
+          | Policy
+        .text(data-aos='fade-right')
+          div(data-aos='fade-in' data-aos-anchor='.text')
+            h2 Some title
+            p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          div(data-aos='fade-in' data-aos-delay='250' data-aos-anchor='.text')
+            h3 Some subtitle
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, remaining essentially unchanged. It was popularised in the 1960s.
+          div(data-aos='fade-in' data-aos-delay='500' data-aos-anchor='.text')
+            h4 Some subtitle
+            ul
+              li - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui porro, ipsa facere asperiores id ratione impedit reiciendis! Necessitatibus, ex maiores.
+              li - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui porro, ipsa facere asperiores id ratione impedit reiciendis! Necessitatibus, ex maiores.
+              li - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui porro, ipsa facere asperiores id ratione impedit reiciendis! Necessitatibus, ex maiores.
+              li - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui porro, ipsa facere asperiores id ratione impedit reiciendis! Necessitatibus, ex maiores.
+              li - Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui porro, ipsa facere asperiores id ratione impedit reiciendis! Necessitatibus, ex maiores.
+          div(data-aos='fade-in' data-aos-delay='750' data-aos-anchor='.text')
+            h3 Some subtitle
+            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+          div(data-aos='fade-in' data-aos-delay='1000' data-aos-anchor='.text')
+            h4 Some subtitle
+            ol
+              li Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam alias accusamus commodi amet voluptatum quibusdam beatae provident aliquid quis.
+              li Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam alias accusamus commodi amet voluptatum quibusdam beatae provident aliquid quis.
+              li Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam alias accusamus commodi amet voluptatum quibusdam beatae provident aliquid quis.
+              li Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam alias accusamus commodi amet voluptatum quibusdam beatae provident aliquid quis.
+              li Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam alias accusamus commodi amet voluptatum quibusdam beatae provident aliquid quis.
+        // /.text
+      // /.container
+    // Footer
+    include pug/footer.pug
+  
+  // Scripts
+  include pug/scripts.pug

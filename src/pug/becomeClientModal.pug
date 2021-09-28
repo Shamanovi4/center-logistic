@@ -1,0 +1,31 @@
+.modal#becomeClientModal
+  .modal__inner
+    .modal__content
+      .modal__header
+        h4.modal__title Need to deliver your cargo?
+          br
+          | We can help!
+        .modal__text Fill a little form and we will call you back!
+      form.form(action='/' method='post')
+        .form__group
+          input.input.input--dark.input--user(type='text' placeholder='Your name')
+        .form__group
+          input.input.input--dark.input--phone(type='tel' placeholder='Your phone')
+        .form__group
+          input.input.input--dark.input--mail(type='email' placeholder='Your email')
+        button.btn.btn--block.btn--orange(type='submit')
+          span Call me back
+      .modal-footer
+        h4.modal-footer__title Our contacts
+        address.modal-footer__contacts 
+          p New York, Street, ZIP code
+            br
+            | Phone: 
+            a.link--hover(href="tel:+9948373123") +9948373123 
+            br
+            | E-mail: 
+            a.link--hover(href="mailto:hello@centerlogistic.com") hello@centerlogistic.com
+      button.modal__close(type='button' data-modal-close)
+        span.modal__close-cross
+  // /.modal__inner
+// /.modal

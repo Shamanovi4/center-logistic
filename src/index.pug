@@ -1,0 +1,294 @@
+doctype html
+include pug/head.pug
+body
+  .page
+    // Header
+    header.header#header
+      .container
+        .header__inner
+          a(href='index.html')
+            img.img(src='images/icons/logo.svg' alt='CenterLogistic' data-scroll='#intro')
+          nav.nav#nav
+            a.nav__link(href='#' data-scroll='#services') Services
+            a.nav__link(href='#' data-scroll='#clients') Clients
+            a.nav__link(href='#' data-scroll='#benefits') Benefits
+            a.nav__link(href='#' data-scroll='#team') Team
+            a.nav__link(href='#' data-scroll='#mission') Mission
+            a.nav__link(href='#' data-scroll='#news') News
+            a.nav__link(href='#' data-modal='#becomeClientModal') Contact Us
+          button.burger#burger(type='button')
+            span.burger__line 1
+            span.burger__line 2
+            span.burger__line 3
+            span.burger__line 4
+    // /.header
+    // Intro
+    .intro#intro
+      .intro__slider#introSlider
+        .slider-item
+          img.intro__slider-photo(src='images/slider/slide-1.jpg' alt='')
+        .slider-item
+          img.intro__slider-photo(src='images/slider/slide-2.jpg' alt='')
+        .slider-item
+          img.intro__slider-photo(src='images/slider/slide-3.jpg' alt='')
+        .slider-item
+          img.intro__slider-photo(src='images/slider/slide-4.jpg' alt='')
+      .container
+        .intro__inner
+          .request-form.request-form--intro(data-aos='fade-right')
+            .request-form__header
+              h3.request-form__title Get Callback
+              .request-form__text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            .request-form__content
+              form.form(action='/' method='post')
+                .form__group
+                  input.input.input--user(type='text' placeholder='Your name')
+                .form__group
+                  input.input.input--phone(type='tel' placeholder='Your phone')
+                .form__group
+                  input.input.input--mail(type='email' placeholder='Your email')
+                button.btn.btn--block.btn--orange(type='submit' data-modal='#thanksModal')
+                  span Call me back
+            // /.request-form
+          .intro__text(data-aos='fade-left')
+            .intro__countries USA, Europe, Asia
+            h1.intro__title
+              span.intro__title-amp &amp;
+              | Trans
+              br
+              | Logistic
+          .intro__slider-arrows
+            button.intro__slider-btn.intro__slider-btn--prev#introSliderPrev(type='button') Prev
+            button.intro__slider-btn.intro__slider-btn--next#introSliderNext(type='button') Next
+        // /.intro__inner
+      // /.container
+    // /.intro
+    // Services
+    section.section#services(data-scrollspy='#services')
+      .container
+        .services
+          h2.services__main-title Services
+          .services__item(data-aos='fade-in' data-aos-anchor='.services')
+            h4.services__title Ground shipping
+            .services__text
+              p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            a.services__link(href='#') Learn more
+          .services__item(data-aos='fade-in' data-aos-delay='250' data-aos-anchor='.services')
+            h4.services__title Railway shipping
+            .services__text
+              p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            a.services__link(href='#') Learn more
+          .services__item(data-aos='fade-in' data-aos-delay='500' data-aos-anchor='.services')
+            h4.services__title Water shipping
+            .services__text
+              p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            a.services__link(href='#') Learn more
+          .services__item(data-aos='fade-in' data-aos-delay='750' data-aos-anchor='.services')
+            h4.services__title Air shipping
+            .services__text
+              p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            a.services__link(href='#') Learn more
+        // /.services
+      // /.container
+    // /.section
+    // Clients
+    section.section.section--map#clients(data-scrollspy='#clients')
+      .container
+        h2.section__title
+          span Our 
+          | clients
+        .clients
+          .clients__logos(data-aos='fade-right')
+            ul.clients__list
+              li(data-aos='fade-in' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/atica.png' alt='' data-aos='fade-in')
+              li(data-aos='fade-in' data-aos-delay='250' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/hex-lab.png' alt='')
+              li(data-aos='fade-in' data-aos-delay='500' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/amara.png' alt='')
+              li(data-aos='fade-in' data-aos-delay='750' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/muzica-2.png' alt='')
+              li(data-aos='fade-in' data-aos-delay='1000' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/solaytic.png' alt='')
+              li(data-aos='fade-in' data-aos-delay='1250' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/hexa.png' alt='')
+              li(data-aos='fade-in' data-aos-delay='1500' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/utosia-2.png' alt='')
+              li(data-aos='fade-in' data-aos-delay='1750' data-aos-anchor='.clients__list')
+                a(href='#' target='_blank')
+                  img.img(src='images/clients/fox-hub.png' alt='')
+          // /.clients__logos
+          .clients__reviews(data-aos='fade-left')
+            .reviews#reviewsSlider
+              .reviews__item
+                .reviews__header
+                  img.reviews__photo(src='https://placehold.it/100' alt='')
+                  .reviews__header-content
+                    .reviews__name John Smith
+                    .reviews__company FOX Hub CEO
+                .reviews__content
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam eius perspiciatis molestiae aut repellat delectus fugiat veritatis maxime impedit harum accusamus, quas nihil laudantium minima ex sapiente. Error, repudiandae.
+                  p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem soluta quas delectus! Perspiciatis possimus sunt quibusdam dolorem ut, officia asperiores.
+              .reviews__item
+                .reviews__header
+                  img.reviews__photo(src='https://placehold.it/100' alt='')
+                  .reviews__header-content
+                    .reviews__name Robin Connolly
+                    .reviews__company FOX Hub CEO
+                .reviews__content
+                  p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolores dolor error iusto molestiae consectetur, temporibus esse quisquam quis quas pariatur nisi impedit, sit dignissimos placeat dolorum, voluptas explicabo culpa?
+                  p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptates aliquid labore repellat consequuntur inventore nesciunt a saepe, atque pariatur ipsa officia, iste incidunt sit illum libero corporis nostrum voluptatem voluptas fuga dolore sed, sint asperiores eligendi! Itaque, est numquam!
+              .reviews__item
+                .reviews__header
+                  img.reviews__photo(src='https://placehold.it/100' alt='')
+                  .reviews__header-content
+                    .reviews__name Jim Patrick
+                    .reviews__company FOX Hub CEO
+                .reviews__content
+                  p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia nostrum cupiditate corrupti. Cupiditate nemo laboriosam distinctio maxime aliquid. Est saepe delectus recusandae, tempore nemo quaerat ab eos voluptates unde, temporibus natus ad sed enim ducimus molestiae omnis eveniet. Maiores.
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellendus itaque modi in fugit error maiores saepe ut vitae numquam.
+        // /.clients
+        button.btn.btn--orange.btn--shadow(type='button' data-modal='#becomeClientModal' data-aos='fade-right')
+          span Become a client
+        span.clients__love(data-aos='fade-left') we love our clients
+      // /.container
+    // /.section
+    // Benefits
+    section.section#benefits(data-scrollspy='#benefits')
+      .container
+        h2.section__title
+          span Our 
+          | benefits
+        .benefits
+          .benefits__col(data-aos='fade-right')
+            ul.benefits-list
+              li.benefits-list__item(data-aos='fade-in' data-aos-anchor='.benefits.list')
+                h4.benefits-list__title Safety
+                .benefits-list__text
+                  p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              li.benefits-list__item(data-aos='fade-in' data-aos-delay='250' data-aos-anchor='.benefits.list')
+                h4.benefits-list__title High quality drivers
+                .benefits-list__text
+                  p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              li.benefits-list__item(data-aos='fade-in' data-aos-delay='500' data-aos-anchor='.benefits.list')
+                h4.benefits-list__title Guarantee &amp; Support 24/7
+                .benefits-list__text
+                  p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              li.benefits-list__item(data-aos='fade-in' data-aos-delay='750' data-aos-anchor='.benefits.list')
+                h4.benefits-list__title Personal manager
+                .benefits-list__text
+                  p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          // /.benefits__col
+          .benefits__col(data-aos='fade-left')
+            img.img(src='images/benefits.jpg' alt='')
+        // /.benefits
+      // /.container
+    // /.section
+    // Team
+    section.section.section--gray#team(data-scrollspy='#team')
+      .container
+        h2.section__title
+          span Our
+          |  team
+        .team
+          .team__col
+            .team__item(data-aos='fade-in' data-aos-anchor='.team')
+              img.team__photo.img(src='images/team/team-1.jpg' alt='')
+              .team__name John Smith
+              .team__prof Logistic manager - 8 years experience
+              ul.team__contacts
+                li
+                  img.team__contacts-icon(src='images/icons/mail-black.svg' alt='')
+                  a.link--hover(href='mailto:john@centerlogistic.com') john@centerlogistic.com
+                li
+                  img.team__contacts-icon(src='images/icons/phone-black.svg' alt='')
+                  a.link--hover(href='tel:+987412512543') +987412512543
+          .team__col
+            .team__item(data-aos='fade-in' data-aos-delay='250' data-aos-anchor='.team')
+              img.team__photo.img(src='images/team/team-2.jpg' alt='')
+              .team__name Daniel Kore
+              .team__prof Software engineer
+              ul.team__contacts
+                li
+                  img.team__contacts-icon(src='images/icons/mail-black.svg' alt='')
+                  a.link--hover(href='mailto:daniel@centerlogistic.com') daniel@centerlogistic.com
+                li
+                  img.team__contacts-icon(src='images/icons/phone-black.svg' alt='')
+                  a.link--hover(href='tel:+987423252253') +987423252253
+          .team__col
+            .team__item(data-aos='fade-in' data-aos-delay='500' data-aos-anchor='.team')
+              img.team__photo.img(src='images/team/team-3.jpg' alt='')
+              .team__name Anna Filler
+              .team__prof Marketing specialist - 10 years experience
+              ul.team__contacts
+                li
+                  img.team__contacts-icon(src='images/icons/mail-black.svg' alt='')
+                  a.link--hover(href='mailto:anna@centerlogistic.com') anna@centerlogistic.com
+                li
+                  img.team__contacts-icon(src='images/icons/phone-black.svg' alt='')
+                  a.link--hover(href='tel:+98735353456') +98735353456
+        // /.team
+      // /.container
+    // /.section
+    // Mission
+    section.section#mission(data-scrollspy='#mission')
+      .container(data-aos='fade-in' data-aos-anchor='#mission')
+        h2.mission-title Our mission
+        .mission(data-aos='fade-up' data-aos-delay='500' data-aos-anchor='#mission')
+          h3.mission__title To provide our customer qualified services according the international
+          h4.mission__subtitle Book your Cargo now &amp; Your job just got a lot easier
+        .align-center(data-aos='fade-up' data-aos-delay='1000' data-aos-anchor='#mission')
+          button.btn.btn--orange.btn--shadow(type='button' data-modal='#becomeClientModal')
+            span Become a client
+    // /.section
+    // News
+    section.section.section--last#news(data-scrollspy='#news')
+      .container
+        h2.section__title
+          span Interesting
+          |  to read
+        .articles
+          article.articles__item(data-aos='fade-right' data-aos-anchor='.articles')
+            h4.articles__title
+              a(href='#') News title
+            .articles__text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolor labore unde debitis consectetur repudiandae necessitatibus quae? Reprehenderit, veritatis laborum.
+            time.articles__date(datetime='2020-12-24 18:00') 24 December, 2020
+          article.articles__item(data-aos='fade-left' data-aos-delay='250' data-aos-anchor='.articles')
+            h4.articles__title
+              a(href='#') News title
+            .articles__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus officia praesentium consectetur optio ex minima velit sequi ducimus blanditiis dicta provident laboriosam a, non et tenetur excepturi ipsum. Corrupti, ipsa.
+            time.articles__date(datetime='2020-12-22 19:00') 22 December, 2020
+          article.articles__item(data-aos='fade-right' data-aos-delay='500' data-aos-anchor='.articles')
+            h4.articles__title
+              a(href='#') News title
+            .articles__text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur similique inventore voluptates excepturi, labore ipsam molestias tempore perspiciatis doloribus repudiandae cum, dicta accusamus? Odit reprehenderit vitae fuga autem laborum eveniet. Veritatis assumenda voluptas culpa? Molestiae fuga deserunt tempore. Eaque minima cum saepe soluta illo corrupti molestiae? Rem, libero? Totam, recusandae?
+            time.articles__date(datetime='2020-12-17 15:00') 17 December, 2020
+          article.articles__item(data-aos='fade-left' data-aos-delay='750' data-aos-anchor='.articles')
+            h4.articles__title
+              a(href='#') News title
+            .articles__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorum omnis, accusantium voluptatibus porro quas iusto placeat reiciendis commodi perferendis veritatis dolores dicta consequatur ipsa dignissimos atque numquam! Voluptatibus doloribus voluptates distinctio fugit quis consequatur nam quibusdam laboriosam accusamus quo, aliquid labore facere maxime deserunt.
+            time.articles__date(datetime='2020-12-15 16:00') 15 December, 2020
+        // /.articles
+        a.btn.btn--orange.btn--shadow(href='blog.html' data-aos='fade-up' data-aos-delay='1000' data-aos-anchor='.articles')
+          span Visit blog
+      // /.container
+    // /.section
+    // Footer
+    include pug/footer.pug
+  // /.page
+    
+  // Modals
+  include pug/becomeClientModal.pug
+  include pug/thanksModal.pug
+
+  // Scripts
+  include pug/scripts.pug
+      
+
